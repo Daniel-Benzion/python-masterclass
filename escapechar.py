@@ -20,3 +20,5 @@ notAnotherSplitString = """This string has not been \
 
 print(anotherSplitString)
 print(notAnotherSplitString)
+
+print("Number 1\tThe Larch\nNumber 2\tThe Horse Chestnut")
