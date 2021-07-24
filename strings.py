@@ -6,3 +6,13 @@ print("hello" + ' world')
 greeting = "Hello"
 name = input("Please enter your name: ")
 print(greeting + ' ' + name)
+
+print(type(greeting))
+
+age = 24
+print(age)
+print(type(age))
+
+age = "two years"
+print(age)
+print (type(age))
