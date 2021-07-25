@@ -13,6 +13,9 @@ age = 24
 print(age)
 print(type(age))
 
-age = "two years"
-print(age)
-print (type(age))
+# age = "two years"
+# print(age)
+# print (type(age))
+
+# print(name + " is " + age + " years old.")
+print(name + " is " + str(age) + " years old.")
