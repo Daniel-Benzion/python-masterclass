@@ -12,3 +12,11 @@ while True:
     else:
         print("You got it!")
         break
+
+tree1 = 'Oak'
+tree2 = 'Ash'
+
+if tree1 == tree2:
+    print("The trees are the same")
+else:
+    print("The trees are different")
