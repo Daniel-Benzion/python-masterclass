@@ -41,3 +41,8 @@ print(parrot[10:])
 
 print(parrot[:6] + parrot[6:])
 print(parrot[:])
+
+print(parrot[-4:-2])
+print(parrot[-4:12])
+
+print(parrot[-14:-8])
