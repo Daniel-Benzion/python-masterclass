@@ -47,3 +47,26 @@ for plant in data:
         flowers.append(plant)
     else:
         shrubs.append(plant)
+
+
+parts = ["computer", "monitor", "keyboard", "mouse", "mousepad", "HDMI cable"]
+
+print(parts)
+
+parts[3] = "mice"
+
+print(parts)
+
+print(parts[3:])
+parts[3:] = ["desk"]
+
+print(parts[3:])
+print(parts)
+
+dat = [4, 5, 104, 105, 110, 120, 130, 150, 312, 385]
+
+del dat[0:2]
+print(dat)
+
+del dat[-2:]
+print(dat)
