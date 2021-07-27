@@ -1,3 +1,12 @@
+# The following types are immutable in Python:
+# int
+# float
+# bool (actually a subclass of int)
+# str
+# tuple
+# frozenset
+# byte
+
 result = True
 another_result = result
 print(id(result))
