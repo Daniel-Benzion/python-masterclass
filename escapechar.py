@@ -1,26 +1,26 @@
-splitString = "This string has been \nsplit over \nseveral \nlines"
-print(splitString)
+split_string = "This string has been \nsplit over \nseveral \nlines"
+print(split_string)
 
-tabbedString = "1\t2\t3\t4\t5"
-print(tabbedString)
+tabbed_string = "1\t2\t3\t4\t5"
+print(tabbed_string)
 
 print('The petshop owner said "No, no, \'e\'s uh, ...\'e\'s resting".')
 print("The petshop owner said \"No, no, 'e's uh, ...'e's resting\".")
 print("""The petshop owner said "No, no, \
 'e's uh, ...'e's resting".""")
 
-anotherSplitString = """This string has been
+another_split_string = """This string has been
 split over
 several
 lines"""
 
-notAnotherSplitString = """This string has not been \
+not_another_split_string = """This string has not been \
 split over \
 several \
 lines"""
 
-print(anotherSplitString)
-print(notAnotherSplitString)
+print(another_split_string)
+print(not_another_split_string)
 
 print("Number 1\tThe Larch\nNumber 2\tThe Horse Chestnut")
 
