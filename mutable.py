@@ -18,3 +18,12 @@ print(shopping_list)
 
 print(id(shopping_list))
 print(id(another_list))
+
+a = b = c = d = shopping_list
+
+print(a)
+b.append("flour")
+print(a)
+print(d)
+c.append("apples")
+print(d)
