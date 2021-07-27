@@ -1,31 +1,49 @@
 current_choice = "-"
+available_parts = ["computer", "monitor", "keyboard", "mouse", "mousepad", "HDMI cable"]
 computer_parts = []
 
-while (current_choice != 0):
+while current_choice != "0":
     if current_choice in "123456":
-        print("Adding {}".format(current_choice))
-        if current_choice == "1":
-            computer_parts.append("computer")
-        elif current_choice == "2":
-            computer_parts.append("monitor")
-        elif current_choice == "3":
-            computer_parts.append("keyboard")
-        elif current_choice == "4":
-            computer_parts.append("mouse")
-        elif current_choice == "5":
-            computer_parts.append("mousepad")
-        elif current_choice == "6":
-            computer_parts.append("HDMI cable")        
+        print("Adding {}".format(available_parts[int(current_choice) - 1]))
+        computer_parts.append(available_parts[int(current_choice) - 1])       
     else:
-        print("Please add options from the list below:")
-        print("1: Computer")
-        print("2: Monitor")
-        print("3: Keyboard")
-        print("4: Mouse")
-        print("5: Mousepad")
-        print("6: HDMI cable")
-        print("0: Exit")
+        print("Please add options from the list below or select 0 to exit:")
+        for number, part in enumerate(available_parts):
+            print("{}: {}".format(number + 1, part))
+
     current_choice = input()
 
 print(computer_parts)
 
+
+data = [
+    "Andromeda - Shrub",
+    "Bellflower - Flower",
+    "China Pink - Flower",
+    "Daffodil - Flower",
+    "Evening Primrose - Flower",
+    "French Marigold - Flower",
+    "Hydrangea - Shrub",
+    "Iris - Flower",
+    "Japanese Camellia - Shrub",
+    "Lavender - Shrub",
+    "Lilac - Shrub",
+    "Magnolia - Shrub",
+    "Peony - Shrub",
+    "Queen Anne's Lace - Flower",
+    "Red Hot Poker - Flower",
+    "Snapdragon - Flower",
+    "Sunflower - Flower",
+    "Tiger Lily - Flower",
+    "Witch Hazel - Shrub",
+]
+
+flowers = []
+shrubs = []
+
+for plant in data:
+    #name = plant[:plant.index("-") - 1]
+    if plant[plant.index("-") + 2:] == "Flower":
+        flowers.append(plant)
+    else:
+        shrubs.append(plant)
