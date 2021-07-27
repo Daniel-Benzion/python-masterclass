@@ -42,3 +42,38 @@ print()
 
 print(id(test))
 print(id(test2))
+
+test_case_list = ['A', 'b', 'F', 'd', 't', 'P', 'z', 'G']
+print(sorted(test_case_list, key=str.casefold))
+
+
+
+
+
+
+empty_list = []
+
+num2 = [1, 3, 5, 7, 9]
+num3 = [2, 4, 6, 8, 10]
+
+
+num4 = num2 + num3
+
+sort_nums = sorted(num4)
+
+print(sort_nums)
+
+digits = sorted("432985617")
+print(digits)
+
+digits2 = list(digits)
+
+print(digits2)
+
+print(digits == digits2)
+print(digits is digits2)
+
+digits3 = digits.copy()
+
+print(digits == digits3)
+print(digits is digits3)
