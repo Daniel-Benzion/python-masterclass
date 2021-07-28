@@ -10,11 +10,14 @@ menu = [
 ]
 
 for meal in menu:
-    if "spam" not in meal:
-        print(meal)
-    else:
+    if "spam" in meal:
         max = len(meal) - 1
         for index, item in enumerate(reversed(meal)):
             if item == "spam":
                 del meal[max - index]
-        print(meal)
+
+    print(meal)
+
+for meal in menu:
+    items = ", ".join(item for item in meal if item != "spam")
+    print("[", items, "]", sep="")
