@@ -22,3 +22,12 @@ metallica[2] = 1986
 metallica = tuple(metallica)
 
 print(metallica)
+
+title, artist, year = metallica
+print(title)
+print(artist)
+print(year)
+
+table = "Coffee table", 200, 100, 75, 34.50
+name, length, width, height, price = table
+print(length * width)
