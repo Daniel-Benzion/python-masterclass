@@ -15,14 +15,14 @@ while True:
     else:
         break
 
-    print("Choose your song")
-    for index, (track_number, song) in enumerate(songs_list):
-        print("{}: {}".format(index + 1, song))
+    while True:
+        print("Choose your song")
+        for index, (track_number, song) in enumerate(songs_list):
+            print("{}: {}".format(index + 1, song))
 
-    choice = int(input())
-    if (1 <= choice <= len(songs_list)):
-        print("=" * 25)
-        print("Playing {}, by {}".format(songs_list[choice - 1][SONG_TITLE_INDEX], selected_artist))
-        print("=" * 25)
-    else:
-        break
+        choice = int(input())
+        if (1 <= choice <= len(songs_list)):
+            print("=" * 25)
+            print("Playing {}, by {}".format(songs_list[choice - 1][SONG_TITLE_INDEX], selected_artist))
+            print("=" * 25)
+            break
