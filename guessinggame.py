@@ -1,11 +1,19 @@
 import random
 
-answer = random.randint(1, 10)
+def get_integer():
+    while True:
+        temp = input()
+        if temp.isnumeric():
+            return int(temp)
+        else:
+            print("That is not a valid input. Please enter an integer between 1 and 10.")
 
+
+answer = random.randint(1, 10)
 print("Guess a number between 1 and 10: ")
 
 while True:
-    guess = int(input())
+    guess = get_integer()
 
     if guess < answer:
         print("Too low!")
