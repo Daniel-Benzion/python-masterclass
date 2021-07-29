@@ -38,22 +38,22 @@ albums = [
      ),
 ]
 
-for name, artist, year, songs in albums:
-    print("Album: {}, Artist: {} Year: {}, Songs: {}".format(name, artist, year, songs))
+# for name, artist, year, songs in albums:
+#     print("Album: {}, Artist: {} Year: {}, Songs: {}".format(name, artist, year, songs))
 
 
-album = albums[2]
-print(album)
-songs = album[3]
-print(songs)
-song = songs[1]
-print(song)
+# album = albums[2]
+# print(album)
+# songs = album[3]
+# print(songs)
+# song = songs[1]
+# print(song)
 
-mayhem = albums[3][3][2][1]
-print(mayhem)
+# mayhem = albums[3][3][2][1]
+# print(mayhem)
 
 
-print(albums[1][3][5][1])
-print(albums[2][2])
-print(albums[3][3][3][0])
-print(albums[2][3][1])
+# print(albums[1][3][5][1])
+# print(albums[2][2])
+# print(albums[3][3][3][0])
+# print(albums[2][3][1])
