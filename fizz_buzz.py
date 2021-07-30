@@ -1,6 +1,6 @@
 def fizz_buzz(num: int) -> str:
     """
-    Play FizzBuzz.
+    FizzBuzz number checker.
     
     :param num: The number to check
     :return:
@@ -21,4 +21,26 @@ def fizz_buzz(num: int) -> str:
         
     return str(num)
 
-print(", ".join(fizz_buzz(i) for i in range(1, 101)))
+# print(", ".join(fizz_buzz(i) for i in range(1, 101)))
+
+def play_fizz_buzz():
+    """
+    Play FizzBuzz with the computer.
+    Gameplay ends when the player either makes a mistake or gets to 100.
+    """
+
+    print("Let's play FizzBuzz! I'll go first.")
+    current = 1
+    while(current <= 100):
+        print(fizz_buzz(current))
+        current += 1
+        if (current < 100):
+            user_input = input()
+            if fizz_buzz(current) != user_input:
+                break
+            current += 1
+    else:
+        print("You win!")
+
+
+play_fizz_buzz()
