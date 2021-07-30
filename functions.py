@@ -1,9 +1,23 @@
 def multiply(x, y):
+    """
+    Get the product of two numbers.
+
+    Args:
+        x: The first number to be multiplied.
+        y: The second number, to be multiplied by x.
+    Returns: 
+        The result of multiplying x by y.
+    """
     result = x * y
     return result
 
 
 def is_palindrome(word):
+    """
+    Return True if a given string is a palindrome, False otherwise.
+    
+    A string is a palindrome if it is identical when its character order is reversed, ignoring capitalization.
+    """
     word = word.casefold()
     return word == word[::-1]
 

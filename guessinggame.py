@@ -6,7 +6,7 @@ def get_integer():
     
     The function will continue looping and prompting the user until a valid `int` is entered.
 
-    :return: The integer that the user enters.
+    Returns: The integer that the user enters.
     """
     while True:
         temp = input()
@@ -29,6 +29,20 @@ while True:
     else:
         print("You got it!")
         break
+
+
+print(input.__doc__)
+print("*" * 80)
+print(get_integer.__doc__)
+print("*" * 80)
+
+
+print()
+print("*" * 80)
+help(input)
+print("*" * 80)
+help(get_integer)
+print("*" * 80)
 
 # tree1 = 'Oak'
 # tree2 = 'Ash'
