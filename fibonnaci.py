@@ -1,4 +1,4 @@
-def fibonacci(n):
+def fibonacci(n: int) -> int:
     """
     Return `n`th Fibonacci number for a positive value of `n`.
     The value of the number at position n in the Fibonacci equence is determined by:

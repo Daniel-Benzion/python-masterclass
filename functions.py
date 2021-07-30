@@ -1,4 +1,4 @@
-def multiply(x, y):
+def multiply(x: float, y: float) -> float:
     """
     Get the product of two numbers.
 
@@ -12,17 +12,17 @@ def multiply(x, y):
     return result
 
 
-def is_palindrome(word):
+def is_palindrome(word: str) -> bool:
     """
     Return True if a given string is a palindrome, False otherwise.
-    
+
     A string is a palindrome if it is identical when its character order is reversed, ignoring capitalization.
     """
     word = word.casefold()
     return word == word[::-1]
 
 
-def is_palindrome_sentence(sentence):
+def is_palindrome_sentence(sentence: str) -> bool:
     result = "".join(char.casefold() for char in sentence if char.casefold() in "abcdefghijklmnopqrstuvwxyz")
     return result == result[::-1]
 
