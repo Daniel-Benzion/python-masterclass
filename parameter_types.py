@@ -11,3 +11,7 @@ func(1, 2, 3, 4, 5, k=6, key1=7, key2=8)
 # var-positional (*args):..(3, 4, 5)
 # keyword:.................6
 # var-keyword:.............{'key1': 7, 'key2': 8}
+
+def sum_numbers(*args: float) -> float:
+    """ calculates the sum of all the numbers passed as arguments """
+    return sum(args)
