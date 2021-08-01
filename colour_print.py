@@ -13,22 +13,27 @@ UNDERLINE = '\u001b[4m'
 REVERSE = '\u001b[7m'
 
 
-def colour_print(text: str, effect: str) -> None:
+def colour_print(text: str, *effects: str) -> None:
     """
     Print `text` using the ANSI sequences to change colour, etc
 
     :param text: The text to print.
-    :param effect: The effect we want.  One of the constants
+    :param effects: The effects we want.  One or more of the constants
         defined at the start of this module.
     """
-    output_string = "{0}{1}{2}".format(effect, text, RESET)
+    effect_string = "".join(effects)
+    output_string = "{0}{1}{2}".format(effect_string, text, RESET)
     print(output_string)
 
 
 colour_print("Hello, Red", RED)
+colour_print("Hello, Red and Bold", RED, BOLD)
 print("This should be in the default terminal colour")
 colour_print("Hello, Blue", BLUE)
+colour_print("Hello, Blue Reversed", BLUE, REVERSE)
+colour_print("Hello, Blue Reversed and Underlined", BLUE, REVERSE, UNDERLINE)
 colour_print("Hello, Yellow", YELLOW)
+colour_print("Hello, Yellow and Bold", YELLOW, BOLD)
 colour_print("Hello, Bold", BOLD)
 colour_print("Hello, Underline", UNDERLINE)
 colour_print("Hello, Reverse", REVERSE)
